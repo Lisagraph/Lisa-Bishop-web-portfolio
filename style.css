@@ -4,6 +4,7 @@ html, body{
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	user-select: none;
 }
 
 body{
@@ -14,7 +15,7 @@ body{
 	background: #eaeaea;
 }
 
-body::-webkit-scrollbar, #scrollDIVEmailStardust::-webkit-scrollbar, #contentEmailStardust::-webkit-scrollbar, #scrollDIVEmailAntiBeauty::-webkit-scrollbar, contentEmailAntiBeauty::-webkit-scrollbar, #resultsFix::-webkit-scrollbar, .scrollPhoneBuyNatural::-webkit-scrollbar{
+body::-webkit-scrollbar, #scrollDIVEmailimmortalSkin::-webkit-scrollbar, #resultsFix::-webkit-scrollbar, .scrollPhoneContactMe::-webkit-scrollbar{
 	-ms-overflow-style: none; /* for Internet Explorer, Edge */
 	scrollbar-width: none; /* for Firefox */
 	overflow-y: scroll; 
@@ -97,11 +98,53 @@ p{
 }
 /* Nav styling end */
 
+/* containers start */
+.scrSpaceCol1, .scrSpaceCol2, .scrSpaceCol3{
+	position: relative;
+	top: 2vh;
+	left: 0;
+	width: 33.33%;
+	float: left;
+	align-content: center;	
+}
+
+.spaceDiv, .screenDiv{
+  	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+  	float: left;
+}
+
+.spaceDiv{
+	height: 100px;
+}
+
+.spaceDivMQ{
+  display: none;
+}
+
+.screenDiv{
+  height: 20px;
+}
+
+.paraCon{
+  position: relative;
+  width: 100%;
+  float: left;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  cursor: pointer;
+}
+
 .paraConMQ{
 	padding-top: 7% !important;
 }
 
-.mRECbotanyEssentials, .mRECMermade{
+.mRECStardustCos, .mRECMermade, .mobMRECBNbanner, .mRECbotanyEssentials{
 	position: relative;
 	width: 450px;
 	height: 450px;
@@ -109,68 +152,68 @@ p{
 	margin: auto;
 	padding: auto;
 	background: #fff;
-	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+	border-radius: 10px;
+	/* neumorphic border */box-shadow: 2px 2px 2px #c9c9c954, -3px -3px 5px #f9fcff82;
 }  
 
-.AntiBeautyEmailCon, .starDustEmailCon{
+.immortalSkinEmailCon{
 	position: relative;
 	width: 500px;
 	height: 460px;
 	align-content: center;
 	margin: auto;
 	padding: auto;
-	background: #fff;
-	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+	border-radius: 10px;
+	background: rgba( 255, 255, 255, 0.01);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 10px;
+	/* neumorphic border */box-shadow: 2px 2px 2px #c9c9c954, -2px -3px 4px #ffffff82;
 	overflow: hidden;
 }
 
-.AntiBeautyEmailCon{
-	background: rgb(155,0,255); background: linear-gradient(0deg, rgba(155,0,255,1) 0%, rgba(21,213,209,1) 100%);
-}
-
-.skyScraperBuyNatural{
+/* illustrationImgCon style start */
+.illustrationImgCon{
 	position: relative;
-	width: 440px;
-	height: 740px;
+	width: auto;
+	height: auto;
 	align-content: center;
 	margin: auto;
 	padding: auto;
-	background: #fff;
-	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
-	z-index: 5;
+}  
+
+img.illustrationImg{
+	width: 30%;
+	height: auto;
+	border-radius: 5px;
+	margin: 0;
+	margin: 10px auto !important;
 }
 
-/* mobileBannerLaMaxime banner style start */
-.mobileBannerLaMaxime{
-	position: relative;
-	width: 320px;
-	height: 100px;
-	justify-content: center;
-	margin: 25px auto auto auto;
-	padding: 0;
-	background: #fff;
-	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
-	z-index: 5;
-	justify-content: center;
-	animation: animateLaMaximeBG 30s linear infinite;
-} 
+img.photoImg{
+	width: 85%;
+	height: auto;
+	border-radius: 5px;
+	margin: 0;
+	margin: 10px auto !important;
+}
+
+.shadowBox{
+	background: rgba( 255, 255, 255, 0.01);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	/* neumorphic border */box-shadow: 2px 2px 2px #c9c9c954, -2px -3px 2px #f9f1ff56;
+}
+/* illustrationImgCon style start */
 
 .arrowClip{
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
-.spDiv{
-	position: relative;
-	width: 100%;
-	top: 0;
-	left: 0;
-	float: left;
-	height: 20px;
-}
-
 /* mermade hair banner style start */
 .containerMermade{
 	width: 450px;
+	border-radius: 10px;
 }
   
 #comparisonMermade{
@@ -178,6 +221,7 @@ p{
 	padding-bottom: 100%;
 	overflow: hidden; 
 	position: relative;
+	border-radius: 10px;
 }
   
 figure{ 
@@ -188,6 +232,7 @@ figure{
 	width: 100%;
 	height: 100%;
 	margin: 0; 
+	border-radius: 10px;
 }
   
 #divisorMermade{ 
@@ -198,7 +243,6 @@ figure{
 	box-shadow: 0 0 8px 1px rgba(196, 188, 205, 0.311);
 	bottom: 0;
 	height: 100%;
-	
 	&::before,
 	&::after{
 	  content: '';
@@ -267,7 +311,7 @@ input[type=range]::-moz-range-track{
 	outline: none;    
 }
   
-.ShopNowMermade{
+.ShopNowMermade, .ShopNowStardustCos{
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -275,8 +319,12 @@ input[type=range]::-moz-range-track{
 	bottom: 0;
 	left: 0;
 }
-  
-.ShopNowMermade1, .ShopNowMermade2, .ShopNowMermade3{
+
+.ShopNowStardustCos{
+	z-index: 50;
+}
+
+.ShopNowMermade1, .ShopNowMermade2, .ShopNowMermade3, .ShopNowStardustCos1, .ShopNowStardustCos2, .ShopNowStardustCos3{
 	position: relative;
 	display: flex;
 	float: left;
@@ -297,829 +345,553 @@ input[type=range]::-moz-range-track{
 	background: #F6D6EA;
 }
   
-.ShopNowMermade2:hover p{
+.ShopNowMermade2:hover{
 	color: #fff !important;
 }
   
 .ShopNowMermade1, .ShopNowMermade3{
 	width: 30%;
 }
+
+/* Shrink */
+.shrink{
+	text-align: center;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	-webkit-tap-highlight-color: transparent;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px transparent;
+}
+
+.shrink:hover{
+	transform: scale(0.9);
+}
 /* mermade hair banner style end */
 
-/* scrollscreens and containers start */
-.scrSpaceCol1, .scrSpaceCol2, .scrSpaceCol3{
-  	position: relative;
-  	top: 2vh;
-  	left: 0;
-  	width: 33.33%;
-  	float: left;
-  	align-content: center;	
-}
-
-.spaceDiv, .screenDiv{
-	position: relative;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
-	float: left;
-}
-
-.spaceDiv{
-  	height: 100px;
-}
-
-.spaceDivMQ{
-	display: none;
-}
-
-.screenDiv{
-	height: 20px;
-}
-
-.paraCon{
-	position: relative;
-	width: 100%;
-	float: left;
-  	top: 0;
-  	left: 0;
-  	display: flex;
-  	justify-content: center;
-  	height: auto;
-  	cursor: pointer;
-}
-
-/* inline AntiBeauty email style start */
-.fixedEmailAntiBeauty{
-	top: 28px;
-	left: 0;
-	margin: 0;
-	height: auto;
-  	width: 100%;
-  	position: absolute;
-	z-index: 1;
-}
-
-#scrollDIVEmailAntiBeauty{
-	position: absolute;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
-	height: 405px;
-  	overflow: auto;
-  	cursor: pointer;
-  	float: left;
-}
-
-#contentEmailAntiBeauty{
-	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
-	height: auto;
- 	border-radius: 15px;
- 	float: left;
-}
-
-/* inline email style start */
-#NoScrollAntiBeauty::-webkit-scrollbar{
-	-ms-overflow-style: none; 
-	scrollbar-width: none; 
-	overflow-y: scroll; 
-	display: none; 
-	height: auto !important;
-}
-
-/* hide scrollbar but allow scrolling */
-.emailContainerAntiBeauty::-webkit-scrollbar{
-	-ms-overflow-style: none; /* for Internet Explorer, Edge */
-	scrollbar-width: none; /* for Firefox */
-	overflow-y: scroll; 
-}
-
-/* What it does: Stops email clients resizing small text. */
-*{
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-
-/* What it does: Forces Outlook.com to display emails full width. */
-.ExternalClass{
-	width: 100%;
-}
-
-/* What is does: Centers email on Android 4.4 */
-div[style*="margin: 16px 0"]{
-	margin: 0 !important;
-}
-
-.centerAntiBeauty{
+/* Stardust banner style start */
+/* stardustslideLabel - slide select range */
+.stardustslideLabel{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.stardustLogoCon{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top: 20px;
+	left: 0;
+	width: 100%;
 	height: auto;
 	float: left;
+	z-index: 50;
 }
 
-/* What it does: Stops Outlook from adding extra spacing to tables */
-table, td{
-	mso-table-lspace: 0pt !important;
-	mso-table-rspace: 0pt !important;
-}
-
-.emailContainerAntiBeauty{
+.stardustsliderCon{
 	position: relative;
-	margin: auto;
-	width: 90%;
-	height: auto !important;
-	background: #000;
-	/* background: rgba( 255, 255, 255, 0.01);
-	backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);*/
-}	
-
-/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper */
-table{
-	border-spacing: 0 !important;
-	border-collapse: collapse !important;
-	table-layout: fixed !important;
-	margin: 0 auto !important;
-}
-
-table table table{
-	table-layout: auto;
-}
-
-/* What it does: Uses a better rendering method when resizing images in IE */
-img{
-	-ms-interpolation-mode: bicubic;
-}
-
-/* What it does: Overrides styles added when Yahoo's auto-senses a link */
-.yshortcuts a{
-	border-bottom: none !important;
-}
-
-/* What it does: Another work-around for iOS meddling in triggered links */
-a[x-apple-data-detectors]{
-	color: inherit !important;
-}
-
-.phone, .email{
-	color: #05004d; 
-	background-color: #f6f7f4;  
-	padding: 0 3px;
-	border-radius: 15px;
-	text-decoration: none !important;
-}
-
-.phone:hover, .email:hover{
-	color: #f6f7f4; 
-	background-color: #6364ff;  
-	text-decoration: none !important;	
-}
-
-.shopNowAntiBeauty:hover{
-	background: #68D3D3 !important;
-	transition: .05s;
-	width: 350px !important;
-	margin: auto;
-}
-
-.shopNowAntiBeauty:hover p{
-	color: #000 !important;
-}
-
-.stardustImgHover:hover{
-	transform: rotate(3deg);
-	transition: .5s;
-}
-
-p .unsubscribeAntiBeauty:hover{
-	color: #9B00FF !important;
-}
-
-/* AntiBeauty email Queries end */
-@media screen and (max-width: 1366px){
-
-.emailContainerAntiBeauty{
-	position: absolute;
 	top: 0;
-	left: 10%;
-	width: 80%;
-	height: 5500px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	float: left;
+	cursor: pointer;
 }
 
-.fluidAntiBeauty, .fluid-centered{
-	max-width: 100% !important;
-	height: auto !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-}	
-
-.fluidSocial{
-	max-width: 15% !important;
-	height: auto !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	padding: auto;
+img.stardustBannerCardImg{
+	width: 220px;
+	height: auto;
 }
 
-.fluid-centered {
-	margin-left: auto !important;
-	margin-right: auto !important;
-}
-
-.stack-column, .stack-column-center{
-	display: block !important;
-	width: 100% !important;
-	direction: ltr !important;
-}	
-
-.stack-column-center{
-	text-align: center !important;
-}
-
-.center-on-narrow{
-	text-align: center !important;
-	display: block !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	float: none !important;
-}
-
-table.center-on-narrow{
-	display: inline-block !important;
-}	
-
-.fluidImgQAntiBeauty{
-	margin: 0 auto 20px auto !important; 
-}
-}	
-
-@media screen and (max-width: 600px) {
-
-.fluidStardust, .fluid-centered{
-	max-width: 100% !important;
-	height: auto !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-}	
-
-.fluid-centered {
-	margin-left: auto !important;
-	margin-right: auto !important;
-}
-
-.stack-column, .stack-column-center{
-	display: block !important;
-	width: 100% !important;
-	direction: ltr !important;
-}	
-
-.stack-column-center{
-	text-align: center !important;
-}
-
-.center-on-narrow{
-	text-align: center !important;
-	display: block !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	float: none !important;
-}
-
-table.center-on-narrow{
-	display: inline-block !important;
-}	
-}         
-/* AntiBeauty email Queries end */
-/* inline AntiBeauty email style end */   
-
-/* botanyEssentials banner style start */
-.botanyEssentialsSlideInput{
+/* stardust banner style start */
+.stardustSlideInput{
 	visibility: hidden;
 }
   
-/* .slider_wrap{
-	background:url(#)no-repeat center;
-}*/
-  
-.card{
-	background: #ff7288;
-	border-radius: 10px;
-	color: #fff;
-	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.086);
-	flex-shrink: 0;
-	font-family: serif Cooper Lt BT !important;
-	font-size: 20px;
-	font-weight: bold;
-	width: 370px;
-	height: 135px;
-	padding: 10px 15px;
+.stardustcard{
 	position: absolute;
+	margin: 0;
+	padding: 0;
 	transition: transform 0.25s ease-out;
-	border: .5px #ff7288 solid;
 }
-  
-.card:hover{
-	background: #ff7288;
-}
-  
-.card.new{
-	top: -4px;
-	left: -8px;
-	height: auto;
-	width: 120px;
-	transform: rotate(-3deg);
-	z-index: 2;
-}
-  
-.card.new .botanyEssentialsCardTitle{
-	color: #ffffff;
-	font-size: 25px;
-	font-weight: bolder;
-}
-  
-.card:nth-of-type(1){
-	transform: translate(-5%, 0) rotate(-5deg) translate(0, -80%);
-}
-  
-.botanyEssentialsCardFooter{
-	align-items: center;
-	bottom: 25px;
-	font-size: 12px;
-	left: 15px;
-	position: absolute;
-	right: 15px;
-	font-weight: 500;
-	font-family: serif Cooper Lt BT !important;
-}
-  
-.botanyEssentialsCardFooter img{
-	height: 25px;
-	margin-right: 6px;
-	width: 25px;
-}
-  
-.botanyEssentialsCardFooter a{
-	color:#000000 !important;
-	text-decoration:none !important;
-	font-family: serif Cooper Lt BT !important;
-}
-  
-.card:nth-of-type(1) .botanyEssentialsCardFooter a{
-	color:#ffffff !important;
-	font-family: serif Cooper Lt BT !important;
-}
-  
-.botanyEssentialsCardTitle{
-	color: #000;
-	font-weight: bold;
-	font-family: serif !important;
-}
-  
-.botanyEssentialscardAnswer{
-	color: #000;
-	background: #fff;
-	font-family: serif Cooper Lt BT !important;
-}
-  
+
 /* card 1 - front of stack */
-#botanyEssentialsSpaces:checked ~ .botanyEssentialsCardSpaces{
+#stardustSpaces:checked ~ .stardustCardSpaces{
 	/* the transform: translate(20%, 0) value moves card -  */
-	transform: translate(9%, -35%) rotate(0) translate(0, 20%);
+	transform: translate(1%, -82%) rotate(0) translate(50%, -65%);
 	z-index: 4;
 }
   
 /* card 2 */
-#botanyEssentialsSpaces:checked ~ .card--BEtabs{
-	transform: translate(8%, -35%) rotate(0) translate(0, -20%);
+#stardustSpaces:checked ~ .card--stardusttabs{
+	transform: translate(1%, -82%) rotate(-4deg) translate(115%, -58%);
 	z-index: 3;
 }
   
 /* card 3 */
-#botanyEssentialsSpaces:checked ~ .card--BEidea{
-	transform: translate(7%, -35%) rotate(0) translate(0, -40%);
+#stardustSpaces:checked ~ .card--stardustidea{
+	transform: translate(1%, -82%) rotate(-3deg) translate(-2%, -59%);
 	z-index: 2;
 }
   
 /* card 4 */
-#botanyEssentialsSpaces:checked ~ .card--BEpricing{
-	transform: translate(4%, -35%) rotate(0) translate(0, -60%);
+#stardustSpaces:checked ~ .card--stardustpricing{
+	transform: translate(1%, -82%) rotate(3deg) translate(99%, -57.5%);
 	z-index: 1;
 }
   
-#botanyEssentialsSpaces:checked ~ label[for='BEtabs']{
+#stardustSpaces:checked ~ label[for='stardusttabs']{
 	z-index: 4;
 }
   
-#botanyEssentialsSpaces:checked ~ label[for='BEidea']{
+#stardustSpaces:checked ~ label[for='stardustidea']{
 	z-index: 2;
 }
 
-#botanyEssentialsSpaces:checked ~ label[for='BEpricing']{
+#stardustSpaces:checked ~ label[for='stardustpricing']{
 	z-index: 1;
+}
+  
+#stardusttabs:checked ~ .card--stardusttabs{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -65%);
+	z-index: 4;
+}
+  
+#stardusttabs:checked ~ .card--stardustidea{
+	transform: translate(1%, -82%) rotate(-4deg) translate(115%, -58%);
+	z-index: 3;
+}
+  
+#stardusttabs:checked ~ .card--stardustpricing{
+	transform: translate(1%, -82%) rotate(-3deg) translate(-2%, -59%);
+	z-index: 2;
+}
+  
+#stardusttabs:checked ~ .stardustCardSpaces{
+	transform: translate(1%, -82%) rotate(3deg) translate(99%, -57.5%);
+	z-index: 1;
+}
+  
+#stardusttabs:checked ~ label[for='stardustSpaces']{
+	z-index: 1;
+}
+  
+#stardusttabs:checked ~ label[for='stardustpricing']{
+	z-index: 2;
+}
+  
+#stardusttabs:checked ~ label[for='stardustidea']{
+	z-index: 4;
+}
+  
+#stardustidea:checked ~ .card--stardustidea{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -65%);
+	z-index: 4;
+}
+  
+#stardustidea:checked ~ .card--stardustpricing{
+	transform: translate(1%, -82%) rotate(-4deg) translate(115%, -58%);
+	z-index: 3;
+}
+  
+#stardustidea:checked ~ .stardustCardSpaces{
+	transform: translate(1%, -82%) rotate(-3deg) translate(-2%, -59%);
+	z-index: 2;
+}
+  
+#stardustidea:checked ~ .card--stardusttabs{
+	transform: translate(1%, -82%) rotate(3deg) translate(99%, -57.5%);
+	z-index: 1;
+}
+  
+#stardustidea:checked ~ label[for='stardustSpaces']{
+	z-index: 1;
+}
+  
+#stardustidea:checked ~ label[for='stardusttabs']{
+	z-index: 2;
+}
+  
+#stardustidea:checked ~ label[for='stardustpricing']{
+	z-index: 4;
+}
+  
+#stardustpricing:checked~.card--stardustpricing{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -65%);
+	z-index: 4;
+}
+  
+#stardustpricing:checked~.stardustCardSpaces{
+	transform: translate(1%, -82%) rotate(-4deg) translate(115%, -58%);
+	z-index: 3;
+}
+  
+#stardustpricing:checked~.card--stardusttabs{
+	transform: translate(1%, -82%) rotate(-3deg) translate(-2%, -59%);
+	z-index: 2;
+}
+  
+#stardustpricing:checked~.card--stardustidea{
+	transform: translate(1%, -82%) rotate(3deg) translate(99%, -57.5%);
+	z-index: 1;
+}
+  
+#stardustpricing:checked~label[for='stardustSpaces']{
+	z-index: 4;
+}
+  
+#stardustpricing:checked~label[for='stardusttabs']{
+	z-index: 2;
+}
+  
+#stardustpricing:checked~label[for='stardustidea']{
+	z-index: 1;
+}
+
+.ShopNowStardustCos2{
+	width: 40%;
+	background: #7b47c976;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	font-size: 12px;
+}
+
+.ShopNowStardustCos2 p{
+	color: #fff;
+}
+  
+.ShopNowStardustCos2:hover{
+	background: #331760;
+}
+  
+.ShopNowStardustCos2:hover p{
+	color: #eee2ff !important;
+}
+
+.growStardust{
+	transition-duration: 0.3s;
+	transition-property: transform;
+	-webkit-tap-highlight-color: transparent;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px transparent;
+}
+
+.growStardust:hover{
+	transform: scale(1.1);
+}
+/* Stardust banner style end */
+
+/* botanyEssentials banner style start */
+
+.botanyEssentialstooltiptext{
+	visibility: hidden;
+	width: auto;
+	background-color: #ff7288;
+	color: #fff;
+	text-align: center;
+	border-radius: 20px;
+	padding: 10px;
+	margin: -30% auto auto auto;
+	position: absolute;
+	z-index: 100;
+	pointer-events: none;
+}
+  
+.botanyEssentialstooltip:hover .botanyEssentialstooltiptext{
+	visibility: visible;
+}
+
+.botanyEssentialsSlideInput{
+    visibility: hidden;
+}
+  
+.card{
+    border-radius: 10px;
+    color: #fff;
+    flex-shrink: 0;
+    font-family: serif Cooper Lt BT !important;
+    font-size: 20px;
+    font-weight: bold;
+    width: 91.6%;
+    height: 35%;
+    padding: 3% 3%;
+    position: absolute;
+    transition: transform 0.25s ease-out;
+    border: 1px #82828299 solid;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+}
+  
+.card.new{
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 30%;
+    height: auto;
+    transform: rotate(-3deg);
+    z-index: 50;
+    border: none;
+    background: #fff;
+	border: 3px #fff solid;
+}
+  
+.card.new .botanyEssentialsCardTitle{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+	border: 3px #fff solid;
+}
+  
+.card:nth-of-type(1){
+    transform: translate(-5%, 0) rotate(-5deg) translate(0, -80%);
+}
+  
+.botanyEssentialsCardFooter{
+    align-items: center;
+    bottom: 5%;
+    font-size: 12px;
+    left: 15%;
+    position: absolute;
+    right: 20%;
+    font-weight: 500;
+    font-family: serif Cooper Lt BT !important;
+}
+  
+.botanyEssentialsCardFooter img{
+    width: 10%;
+    height: 10%;
+    margin-top: 85px !important;
+    margin-right: 6px;
+}
+  
+.botanyEssentialsCardFooter a{
+    color: #000;
+    text-decoration:none !important;
+    font-family: serif Cooper Lt BT !important;
+}
+  
+.card:nth-of-type(1) .botanyEssentialsCardFooter a{
+    color:#fff !important;
+    font-family: serif Cooper Lt BT !important;
+}
+  
+.botanyEssentialsCardTitle{
+    color: #fff;
+    font-weight: bold;
+    font-family: serif !important;
+}
+  
+.botanyEssentialscardAnswer{
+    color: #fff;
+    font-family: serif Cooper Lt BT !important;
+}
+
+.botanyEssentialsCardTitle:hover, .botanyEssentialscardAnswer:hover{
+    background: #ff7288;
+    color: #000;
+}
+  
+/* card 1 - front of stack */
+#botanyEssentialsSpaces:checked ~ .botanyEssentialsCardSpaces{
+    /* the transform: translate(20%, 0) value moves card -  */
+    transform: translate(1%, -55%) rotate(0) translate(0, 20%);
+    z-index: 4;
+}
+  
+/* card 2 */
+#botanyEssentialsSpaces:checked ~ .card--BEtabs{
+    transform: translate(1%, -22%) rotate(0) translate(0, -20%);
+    z-index: 3;
+}
+  
+/* card 3 */
+#botanyEssentialsSpaces:checked ~ .card--BEidea{
+    transform: translate(1%, -32%) rotate(0) translate(0, -40%);
+    z-index: 2;
+}
+  
+/* card 4 */
+#botanyEssentialsSpaces:checked ~ .card--BEpricing{
+    transform: translate(1%, -42%) rotate(0) translate(0, -60%);
+    z-index: 1;
+}
+  
+#botanyEssentialsSpaces:checked ~ label[for='BEtabs']{
+    z-index: 4;
+}
+  
+#botanyEssentialsSpaces:checked ~ label[for='BEidea']{
+    z-index: 2;
+}
+
+#botanyEssentialsSpaces:checked ~ label[for='BEpricing']{
+    z-index: 1;
 }
   
 #BEtabs:checked ~ .card--BEtabs{
-	transform: translate(9%, -35%) rotate(0) translate(0, 20%);
-	z-index: 4;
+    transform: translate(1%, -55%) rotate(0) translate(0, 20%);
+    z-index: 4;
 }
   
 #BEtabs:checked ~ .card--BEidea{
-	transform: translate(8%, -35%) rotate(0) translate(0, -20%);
-	z-index: 3;
+    transform: translate(1%, -22%) rotate(0) translate(0, -20%);
+    z-index: 3;
 }
   
 #BEtabs:checked ~ .card--BEpricing{
-	transform: translate(7%, -35%) rotate(0) translate(0, -40%);
-	z-index: 2;
+    transform: translate(1%, -32%) rotate(0) translate(0, -40%);
+    z-index: 2;
 }
   
 #BEtabs:checked ~ .botanyEssentialsCardSpaces{
-	transform: translate(4%, -35%) rotate(0) translate(0, -60%);
-	z-index: 1;
+    transform: translate(1%, -42%) rotate(0) translate(0, -60%);
+    z-index: 1;
 }
   
 #BEtabs:checked ~ label[for='botanyEssentialsSpaces']{
-	z-index: 1;
+    z-index: 1;
 }
   
 #BEtabs:checked ~ label[for='BEpricing']{
-	z-index: 2;
+    z-index: 2;
 }
   
 #BEtabs:checked ~ label[for='BEidea']{
-	z-index: 4;
+    z-index: 4;
 }
   
 #BEidea:checked ~ .card--BEidea{
-	transform: translate(9%, -35%) rotate(0) translate(0, 20%);
-	z-index: 4;
+    transform: translate(1%, -55%) rotate(0) translate(0, 20%);
+    z-index: 4;
 }
   
 #BEidea:checked ~ .card--BEpricing{
-	transform: translate(8%, -35%) rotate(0) translate(0, -20%);
-	z-index: 3;
+    transform: translate(1%, -22%) rotate(0) translate(0, -20%);
+    z-index: 3;
 }
   
 #BEidea:checked ~ .botanyEssentialsCardSpaces{
-	transform: translate(7%, -35%) rotate(0) translate(0, -40%);
-	z-index: 2;
+    transform: translate(1%, -32%) rotate(0) translate(0, -40%);
+    z-index: 2;
 }
   
 #BEidea:checked ~ .card--BEtabs{
-	transform: translate(4%, -35%) rotate(0) translate(0, -60%);
-	z-index: 1;
+    transform: translate(1%, -42%) rotate(0) translate(0, -60%);
+    z-index: 1;
 }
   
 #BEidea:checked ~ label[for='botanyEssentialsSpaces']{
-	z-index: 1;
+    z-index: 1;
 }
   
 #BEidea:checked ~ label[for='BEtabs']{
-	z-index: 2;
+    z-index: 2;
 }
   
 #BEidea:checked ~ label[for='BEpricing']{
-	z-index: 4;
+    z-index: 4;
 }
   
 #BEpricing:checked~.card--BEpricing{
-	transform: translate(9%, -35%) rotate(0) translate(0, 20%);
-	z-index: 4;
+    transform: translate(1%, -55%) rotate(0) translate(0, 20%);
+    z-index: 4;
 }
   
 #BEpricing:checked~.botanyEssentialsCardSpaces{
-	transform: translate(8%, -35%) rotate(0) translate(0, -20%);
-	z-index: 3;
+    transform: translate(1%, -22%) rotate(0) translate(0, -20%);
+    z-index: 3;
 }
   
 #BEpricing:checked~.card--BEtabs{
-	transform: translate(7%, -35%) rotate(0) translate(0, -40%);
-	z-index: 2;
+    transform: translate(1%, -32%) rotate(0) translate(0, -40%);
+    z-index: 2;
 }
   
 #BEpricing:checked~.card--BEidea{
-	transform: translate(4%, -35%) rotate(0) translate(0, -60%);
-	z-index: 1;
+    transform: translate(1%, -42%) rotate(0) translate(0, -60%);
+    z-index: 1;
 }
   
 #BEpricing:checked~label[for='botanyEssentialsSpaces']{
-	z-index: 4;
+    z-index: 4;
 }
   
 #BEpricing:checked~label[for='BEtabs']{
-	z-index: 2;
+    z-index: 2;
 }
   
 #BEpricing:checked~label[for='BEidea']{
-	z-index: 1;
+    z-index: 1;
 }
   
 /* botanyEssentialsslideLabel - slide select range */
 .botanyEssentialsslideLabel{
-	position: absolute;
-	transform: translate(-60%, -65%) rotate(2deg);
-	width: 400px;
-	height: 300px;
-	cursor:pointer;
-	/* background: #00ff62; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #47474799;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+	border-radius: 10px;
+	/* neumorphic border */box-shadow:  4px 4px 3px #e9e9e944, -3px -3px 4px #ffffff25;
 }
   
 .botanyEssentialsImg{
-	position: relative;
-	width: 80%;
-	top: -8%;
-	left: 10%;
-	height: 50px;
-	float: left;
-}
-  
-.botanyEssentialsInfographic{
-	position: absolute;
-	top: 8px;
-	right: 8px;
-	width: 290px;
-	height: auto;
+    position: relative;
+    width: 80%;
+    top: -6%;
+    left: 10%;
+    height: 50px;
+    float: left;
 }
   
 .botanyEssentialsTEXTbox{
-	position: absolute;
-	bottom: 5px;
-	left: -5px;
-	width: 55%;
-	border-radius: 5px;
-	height: auto;
-	text-align: center;
-	background: #ff7288;
+    position: relative;
+    bottom: -43%;
+    left: 40%;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: auto !important;
+    border-radius: 5px;
+    background: #fff;
+    transform: rotate(-2deg);
+    z-index: 50;
+    font-family: serif, Cooper Lt BT;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    font-size: 32px;
+    padding: 15px;
 }
   
 .botanyEssentialsCART:hover{
-	background: #fff !important;
-	color: #ff7288 !important;
+    background: #fff !important;
+    color: #ff7288 !important;
 }
+
+/* Grow Rotate */
+.grow-rotate {
+    display: inline-block;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-tap-highlight-color: transparent;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+  }
+  .grow-rotate:hover {
+    transform: scale(1.1) rotate(-4deg);
+  }
 /* botanyEssentials banner style end */
 
-/* inline Stardust email style start */
-.fixedEmailStardust{
-	top: 0;
-	left: 0;
-	margin: 0;
-	height: auto;
-  	width: 100%;
-  	position: absolute;
-	z-index: 1;
-}
-
-#scrollDIVEmailStardust{
-	position: absolute;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
-	height: 580px;
-  	overflow: auto;
-  	cursor: pointer;
-  	float: left;
-}
-
-#contentEmailStardust{
-	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
- 	border-radius: 15px;
- 	float: left;
-	height: auto;
-}
-
-/* inline email style start */
-#NoScrollStardust::-webkit-scrollbar{
-	-ms-overflow-style: none; 
-	scrollbar-width: none; 
-	overflow-y: scroll; 
-	display: none; 
-	height: auto !important;
-}
-
-/* hide scrollbar but allow scrolling */
-.emailContainerStardust::-webkit-scrollbar{
-	-ms-overflow-style: none; /* for Internet Explorer, Edge */
-	scrollbar-width: none; /* for Firefox */
-	overflow-y: scroll; 
-}
-
-/* What it does: Stops email clients resizing small text. */
-*{
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-
-/* What it does: Forces Outlook.com to display emails full width. */
-.ExternalClass{
-	width: 100%;
-}
-
-/* What is does: Centers email on Android 4.4 */
-div[style*="margin: 16px 0"]{
-	margin: 0 !important;
-}
-
-.centerStardust{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	float: left;
-	height: auto;
-}
-
-/* What it does: Stops Outlook from adding extra spacing to tables */
-table, td{
-	mso-table-lspace: 0pt !important;
-	mso-table-rspace: 0pt !important;
-}
-
-.emailContainerStardust{
-	position: relative;
-	margin: auto;
-	width: 90%;
-	height: auto;
-	/* background: rgba( 255, 255, 255, 0.01);
-	backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);*/
-}	
-
-/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper */
-table{
-	border-spacing: 0 !important;
-	border-collapse: collapse !important;
-	table-layout: fixed !important;
-	margin: 0 auto !important;
-	height: auto;
-}
-
-table table table{
-	table-layout: auto;
-}
-
-/* What it does: Uses a better rendering method when resizing images in IE */
-img{
-	-ms-interpolation-mode: bicubic;
-}
-
-/* What it does: Overrides styles added when Yahoo's auto-senses a link */
-.yshortcuts a{
-	border-bottom: none !important;
-}
-
-/* What it does: Another work-around for iOS meddling in triggered links */
-a[x-apple-data-detectors]{
-	color: inherit !important;
-}
-
-.phone, .email{
-	color: #05004d; 
-	background-color: #f6f7f4;  
-	padding: 0 3px;
-	border-radius: 15px;
-	text-decoration: none !important;
-}
-
-.phone:hover, .email:hover{
-	color: #f6f7f4; 
-	background-color: #6364ff;  
-	text-decoration: none !important;	
-}
-	
-/* Twinkle-Animation */
-.star{
-	position: absolute;
-	width: 1.5px; /* Breite eines Sterns */
-	height: 1.5px; /* Höhe eines Sterns */
-	background-color: #766396; /* Farbe der Sterne (weiß) */
-	border-radius: 50%; /* Rundung für Sterneffekt */
-	animation: twinkling 3s infinite; /* Twinkle-Animation */
-	z-index: 0;
-}
-
-.star-field{
-	background: rgb(51,23,96);
-	background: linear-gradient(0deg, rgba(51,23,96,1) 22%, rgba(148,141,192,1) 56%, rgba(189,191,233,1) 66%, rgba(210,211,240,1) 73%, rgba(226,227,245,1) 80%, rgba(255,255,255,1) 94%) !important;
-}
-
-.shopNowStardust:hover{
-	transform: rotate(3deg);
-	background: #331760 !important;
-	transition: .5s;
-}
-
-.shopNowStardust:hover p{
-	color: #BDBFE9 !important;
-}
-
-.stardustImgHover:hover{
-	transform: rotate(3deg);
-	transition: .5s;
-}
-
-/* Stardust email Queries start */
-@media screen and (max-width: 1366px){
-
-.emailContainerStardust{
-	position: absolute;
-	top: 0;
-	left: 10%;
-	width: 80%;
-	height: 5500px;
-}
-
-.fluidStardust, .fluid-centered{
-	max-width: 100% !important;
-	height: auto !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-}	
-
-.fluidSocial{
-	max-width: 15% !important;
-	height: auto !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	padding: auto;
-}
-
-.fluid-centered {
-	margin-left: auto !important;
-	margin-right: auto !important;
-}
-
-.stack-column, .stack-column-center{
-	display: block !important;
-	width: 100% !important;
-	direction: ltr !important;
-}	
-
-.stack-column-center{
-	text-align: center !important;
-}
-
-.center-on-narrow{
-	text-align: center !important;
-	display: block !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	float: none !important;
-}
-
-table.center-on-narrow{
-	display: inline-block !important;
-}	
-
-.fluidImgQStardust{
-	margin: 0 auto 20px auto !important; 
-}
-}	
-
-@media screen and (max-width: 600px){
-
-.fluidStardust, .fluid-centered{
-	max-width: 100% !important;
-	height: auto !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-}	
-
-.fluid-centered {
-	margin-left: auto !important;
-	margin-right: auto !important;
-}
-
-.stack-column, .stack-column-center{
-	display: block !important;
-	width: 100% !important;
-	direction: ltr !important;
-}	
-
-.stack-column-center{
-	text-align: center !important;
-}
-
-.center-on-narrow{
-	text-align: center !important;
-	display: block !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	float: none !important;
-}
-
-table.center-on-narrow{
-	display: inline-block !important;
-}	
-}         
-/* Stardust email Queries end */
-/* inline Stardust email style end */
 
 /* mobileBannerLaMaxime banner style start */
 .mobileBannerLaMaxime{
@@ -1129,29 +901,75 @@ table.center-on-narrow{
 	justify-content: center;
 	margin: 25px auto auto auto;
 	padding: 0;
-	background: #fff;
-	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
 	z-index: 5;
 	justify-content: center;
 	animation: animateLaMaximeBG 30s linear infinite;
+	background: rgba( 255, 255, 255, 0.01);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 5px;
+	/* neumorphic border */box-shadow:  4px 4px 3px #d9d9d944, -3px -3px 4px #ffffff82;
 } 
+
+/* waves start */
+.waveCon{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 5px;
+	overflow: hidden !important;
+}
+  
+#waves{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 70%;
+}
+  
+.waves > use {
+	animation: move-forever 32s -32s linear infinite;
+}
+  
+.waves > use:nth-child(2) {
+	animation-delay: -10s;
+	animation-duration: 20s;
+}
+
+.waves > use:nth-child(3) {
+	animation-delay: -20s;
+	animation-duration: 10s;
+}
+  
+@keyframes move-forever {
+	0% {
+	  transform: translate(-90px, 0%);
+	}
+	100% {
+	  transform: translate(85px, 0%);
+	}
+}
+/* waves end */
 
 /* animateLaMaximeBG mobileBanner auto ani slider start */
 @keyframes animateLaMaximeBG{
 	0%{
-		background: #E9CB69;
-  }
-	  25%{
 		background: #ffecae;
   }
-	  50%{
+	  45%{
+		background: #E9CB69;
+  }
+	  60%{
 		background: #fff;
   }
-	  75%{
-		background: #ffecae;
+	  85%{
+		background: #E9CB69;
   }
 	  100%{
-		background: #E9CB69;
+		background: #ffecae;
   }
 }
 /* animateLaMaximeBG mobileBanner auto ani slider end */
@@ -1160,15 +978,18 @@ table.center-on-narrow{
 #LaMaximeSlide{
 	width: 100%;
 	height: 100%;
-  margin: auto;
+  	margin: auto;
 	position: absolute;
-  justify-content: center;
+  	justify-content: center;
 }
 
 #LaMaximeSlide > * {visibility: hidden; position: absolute;
-  	top: 0; left: 0; animation: 20s autoplay1 infinite}
+  	top: 0;
+	left: 0;
+	animation: 20s autoplay1 infinite
+}
 
-@keyframes autoplay1 {
+@keyframes autoplay1{
   	0% {visibility: visible}
   	20% {visibility: hidden}
 }
@@ -1215,7 +1036,7 @@ table.center-on-narrow{
 
 .ShopNowLaMaxime{
 	position: relative;
-	margin: 25px auto auto auto;
+	margin: 20px auto auto auto;
 	display: flex;
 	justify-content: center;
 	width: 75%;
@@ -1223,7 +1044,7 @@ table.center-on-narrow{
 	height: auto;
 	background: #000;
 	color: #E9CB69;
-	font-size: 8px;
+	font-size: 10px;
 	text-align: center;
 	padding: 3px;
 }
@@ -1237,17 +1058,33 @@ table.center-on-narrow{
 }
 /* mobileBannerLaMaxime banner style end */
 
-/* skyScraperBuyNatural start */
-.fixedPhoneConBuyNatural{
+
+
+/* skyScraperContactMe start */
+.skyScraperContactMe, .skyScraperFun{
+	position: relative;
+	width: auto;
+	height: auto;
+	align-content: center;
+	margin: auto;
+	padding: auto;
+	display: flex;
+	justify-content: center;
+	z-index: 5;
+}
+
+.fixedPhoneContactMe{
 	position: absolute;
-	margin-left: 82px;
+	margin: auto;
+	float: left;
 	height: 595px;
 	width: 275px;
 	border-radius: 35px;
-	overflow: hidden
+	overflow: hidden;
+	background: #D8E5EE;
 }
 
-#scrollPhoneBuyNatural{
+#scrollPhoneContactMe{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1259,16 +1096,17 @@ table.center-on-narrow{
 	border-radius: 25px;
 }
 
-#contentPhoneBuyNatural{
+#contentPhoneContactMe{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: auto;
 	float: left;
+	background: #005398;
 }
 
-#BuyNaturalphoneSVG{
+#phoneSVGcontactMe{
 	width: 100%;
 	height: 600px;
 	position: relative;
@@ -1276,129 +1114,193 @@ table.center-on-narrow{
 	z-index: 45 !important;
 }
 
-.buyNaturalPhoneHeroSVGCon{
-	position: relative;
-	width: 290px;
-	height: 700px;
-	position: relative;
-	pointer-events: none;
+#contentPhoneFun{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #e4d8ee;
 }
 
-/* skyScraperBuyNatural wrap style start */
-.dealPhonewrapBuyNatural{
+.fixedPhoneFun{
+	position: absolute;
+	margin: auto;
+	float: left;
+	height: 840px;
+	width: 540px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#scrollPhoneFun{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	cursor: pointer;
+	float: left;    
+	border-radius: 5px;
+}
+
+.iPadConHEADER{
+	position: relative;
+	width: 100%;
+	float: left;
+	top: 0;
+	left: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	z-index: 50;
+}
+
+.iPadConTop, .iPadCon{
+	position: relative;
+	width: 100%;
+	float: left;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	height: auto;
+}
+
+.iPadConTop{
+	margin-top: -1% !important;
+}
+
+.iPadCon{
+	margin-top: 1%;
+}
+
+#phoneSVGFun{
+	width: 550px;
+	height: auto;
+	position: relative;
+	pointer-events: none !important;
+	z-index: 55 !important;
+}
+
+/* qual slider start */
+.qualOuterCon{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.qualSlider{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: auto;
+	border-radius: 10px;
+    z-index: 3;
+}
+
+.qualWrapper{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.qualSlide{
+    width: 569px;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+	padding: 0;
+  	margin: 0;
+}
+
+.qualConCard{
+	position: relative;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: auto;
+}
+
+#qualItems{
+    width: 10000px;
+    position: relative;
+    top: 0;
+    left: -569px;
+	height: auto;
+}
+
+#qualItems.shifting{
+   transition: left .2s ease-out;
+}
+
+.qualControl{
+    position: absolute;
+    top: 48%;
+    width: 5px;
+    height: 5px;
+    border: 3px #b02b1a solid;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.qualControl:hover {
+    background: #fff;
+    width: 5px;
+    height: 5px;
+    border-radius: 24px;
+    border: 3px #05004d solid;
+    z-index: 2;
+}
+
+.qualPrev, .qualNext{
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.qualPrev{
+    left: 10px;
+}
+
+.qualNext {
+    right: 10px;
+}
+
+.qualPrev:active, .qualNext:active{
+    transform: scale (0.9);
+}
+/* qual slider end */
+
+/* skyScraperContactMe wrap style */
+.phonewrapContactMe{
 	width: 88.3%;
 	height: auto;
 	z-index: 40;
 	position: absolute;
 	margin: 170px 0 0 16px;
 	border-radius: 5px;
-	background: rgba(255, 255, 255, 0);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(3px); 
-}
-  
-.imgDivPhoneBuyNatural{
-	position: relative;
-	justify-content: center;
-	top: 20px;
-	left: 0;
-	width: 100%;
-	height: auto;
-	float: left;
-	padding: 0 !important;
-	background: rgba( 255, 255, 255, 0.01);
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-	border-radius: 50%;
-}
-  
-.imgDivPhoneBuyNatural img{
-	width: 100%;
-	height: auto;
-	padding: auto !important;
-}
-  
-.sentenceDivPhoneBuyNatural{
-	position: relative;
-	text-align: left;
-	top: -70px;
-	left: 0;
-	width: 100%;
-	float: left;
-	font-size: 15px;
-	margin: 15px 0;
-}
-  
-.BuyNaturalRangePhone{
-	position: relative;
-	margin: -83px 0 20px 0 !important;
-	justify-content: center;
-	text-align: center;
-	width: 100%;
-	border-radius: 20px;
-	float: left;
-	background: #6a8cff;
-	animation: animateRegPhoneBTN 30s linear infinite;
-}
-  
-.BuyNaturalRangePhone p, .BuyNaturalPhone p{
-	padding: 0 5px !important;
-	text-align: center;
-	font-weight: 600;
-	color: #fff;
-	letter-spacing: 5px;
-	font-size: 15px !important;
-}
-  
-.BuyNaturalRangePhone:hover{
-	background: #f6f7f4 !important;
-}
-  
-.BuyNaturalRangePhone:hover p{
-	color: #3251ff !important;
-}
-  
-@keyframes animateRegPhoneBTN{
-	0%{
-		background: #3251ff;
-		color: #fff;
-  }
-	  25%{
-		background: #6a8cff;
-  }
-	  50%{
-		background: #89a2ff;
-  }
-	  75%{
-		background: #6a8cff;
-  }
-	  100%{
-		background: #3251ff;
-  }
 }
 
-.BuyNaturalPhone{
-	position: relative;
-	top: 60px;
-	left: 0;
-	margin: 15px 0;
-	justify-content: center;
-	text-align: center;
-	width: 100%;
-	border-radius: 40px;
-	float: left;
-	background: #3251ff;
-	animation: animateBuyNaturalPhoneBTN 30s linear infinite;
-}
-
-/* ribbonPhone style start  background: linear-gradient(to top, #adc1fc 10%, #6a8cff 50%, #3251ff 100%);*/
-.BuyNaturalRibbonPhone{
-	top: 165px;
+/* ribbonPhoneContactMe style start */
+.ribbonPhoneContactMe{
+	margin-top: 20.5%;
 	width: 100%;
 	position: relative;
 	text-align: center;
 	font-size: 16px !important;
-	background: #6a8cff;
 	z-index: 45;
 	background: linear-gradient(to bottom, #63ff6b17, #0c902f22);
 	background: rgba( 255, 255, 255, 0.01);
@@ -1408,17 +1310,17 @@ table.center-on-narrow{
 	font-family: 'Helvetica Neue',Helvetica, sans-serif;
 }
   
-.BuyNaturalRibbonPhone p{
+.ribbonPhoneContactMe p{
 	font-size: 25px !important;
-	color: #e7f3fa;
+	color: #9ed4ff;
 	/* text-shadow: #05004d 0 1px 0; */
 	margin: 0;
 	padding: 15px 10px;
 	text-align: center;
 }
   
-.BuyNaturalRibbonPhone .BuyNaturalribbonPhoneContent:before, .BuyNaturalRibbonPhone .BuyNaturalribbonPhoneContent:after{
-	border-color: #3251ff transparent transparent transparent;
+.ribbonPhoneContactMe .ribbonPhoneContactMeContent:before, .ribbonPhoneContactMe .ribbonPhoneContactMeContent:after{
+	border-color: #024276 transparent transparent transparent;
 	position: absolute;
 	display: block;
 	border-style: solid;
@@ -1427,44 +1329,30 @@ table.center-on-narrow{
 	z-index: 0 !important;
 }
   
-.BuyNaturalRibbonPhone .BuyNaturalribbonPhoneContent:before{
+.ribbonPhoneContactMe .ribbonPhoneContactMeContent:before{
 	left: 0;
 	border-width: 1em 0 0 1em;
 }
   
-.BuyNaturalRibbonPhone .BuyNaturalribbonPhoneContent:after{
+.ribbonPhoneContactMe .ribbonPhoneContactMeContent:after{
 	right: 0;
 	border-width: 1em 1em 0 0;
 }
-/* BuyNaturalRibbonPhone style end */
+/* ribbonPhoneContactMe style end */
 
-.phoneHeaderBuyNatural{
+.phoneHeaderContactMe{
 	position: absolute;
 	top: 0;
 	width: 269px !important;
 	height: 45px;
 	float: left;
-	margin: 0 0 0 0;
-	background: rgba(4, 3, 58, 0.043);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
+	margin: 0;
 	z-index: 6;
 	border-radius: 35px 35px 0 0;
 }
-
-.BuyNaturalPhoneBG{
-	position: absolute;
-	width: 275px;
-	height: 45px;
-	float: left;
-	margin-top: 0;
-	background: #05004d;
-	z-index: -10;
-	border-radius: 35px 35px 0 0;
-}
   
-/* clockCon style start */
-.clockCon{
+/* clockConcontactMe batteryConContactMe style start */
+.clockConcontactMe, .clockConFun{
 	position: relative;
 	margin-top: 20px;
 	margin-left: 5px;
@@ -1473,28 +1361,50 @@ table.center-on-narrow{
 	z-index: 70 !important;
 }
 
-.batteryCon{
+.batteryConContactMe{
 	position: absolute;
 	margin-top: -20px;
 	margin-left: 185px;
 	width: 68.8693px;
 	height: auto;
 }
+
+.phoneHeaderFun{
+	position: absolute;
+	top: 0;
+	width: 550px !important;
+	height: 45px;
+	float: left;
+	margin: 0 0 0 0;
+	background: rgba(4, 3, 58, 0.043);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	z-index: 6;
+	border-radius: 15px 15px 0 0;
+}
+
+.batteryConFun{
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 440px;
+	width: 68.8693px;
+	height: auto;
+}
   
-#clockPhone{
+#clockPhonecontactMe, #clockTabletFun{
 	position: relative;
 	color: #fff;
 	font-size: 10px;
 	font-weight: 600;
 	z-index: 80 !important;
 }
-/* clockCon style end */
+/* clockConcontactMe batteryConContactMe style end */
   
-/* ribbonBNlogo style */
-.ribbonBNlogo{
+/* ribbonInfoContactMe style */
+.ribbonInfoContactMe{
     width: 60%;
     position: absolute;
-    margin: 65px auto auto -10px;
+    margin: 0 auto auto -10px;
 	padding: 20px;
     text-align: center;
     background: rgba( 255, 255, 255, 0.01);
@@ -1504,7 +1414,7 @@ table.center-on-narrow{
 	z-index: 6;
 }
 
-.ribbonBNlogo p{
+.ribbonInfoContactMe p{
     font-size: 25px !important;
     color: #801111;
     text-shadow: #D65C5C 0 1px 0;
@@ -1512,208 +1422,34 @@ table.center-on-narrow{
     padding: 15px 10px;
 }
 
-/* BuyNaturalPhonebgElementCon cloud element ani banner style start */
-.BuyNaturalPhonebgElementCon{
-	top: 0;
-	left: 0;
-	margin: 0;
-	width: 100%;
-	height: 700px;
-	border: none;
+.picContactCon{
 	position: relative;
 	float: left;
-	overflow: hidden;
-	background: linear-gradient(to top, #adc1fc 10%, #6a8cff 50%, #3251ff 100%);
-	z-index: 5 !important;
-	}
-	
-	.bgElement1cBuyNatural{
-	position: relative;
-	animation: bgElement1anic;
-	animation-direction: forwards;
-	animation-duration: 300s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement1anic{
-	0%   {left: -310px; top: 0;}
-	100% {left: 300px; top: 0;}
-	}
-	
-	.bgElement2c{
-	position: relative;
-	animation: bgElement2anic;
-	animation-direction: forwards;
-	animation-duration: 150s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement2anic{
-	0%   {left: -300px; top: 5%;}
-	100% {left: 360px; top: 5%;}
-	}
-	
-	.bgElement3c{
-	position: relative;
-	animation: bgElement3anic;
-	animation-direction: forwards;
-	animation-duration: 350s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement3anic{
-	0% {left: -350px; top: 10%;}
-	100% {left: 303px; top: 10%;}
-	}
-	
-	.bgElement4c{
-	position: relative;
-	animation: bgElement4anic;
-	animation-direction: forwards;
-	animation-duration: 200s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement4anic{
-	0%   {left: -390px; top: 15%;}
-	100% {left: 295px; top: 15%;}
-	}
-	
-	@keyframes bgElement5anic{
-	0%   {left: -320px; top: 25%;}
-	100% {left: 300px; top: 25%;}
-	}
-	
-	.bgElement5c{
-	position: relative;
-	animation: bgElement5anic;
-	animation-direction: forwards;
-	animation-duration: 450s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement6anic{
-	0%   {left: -310px; top: 28%;}
-	100% {left: 305px; top: 28%;}
-	}
-	
-	.bgElement6c{
-	position: relative;
-	animation: bgElement6anic;
-	animation-direction: forwards;
-	animation-duration: 250s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement7anic{
-	0%   {left: -290px; top: 30%;}
-	100% {left: 290px; top: 30%;}
-	}
-	
-	.bgElement7c{
-	position: relative;
-	animation: bgElement7anic;
-	animation-direction: forwards;
-	animation-duration: 550s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement8anic{
-	0%   {left: -290px; top: 35%;}
-	100% {left: 290px; top: 35%;}
-	}
-	
-	.bgElement8c{
-	position: relative;
-	animation: bgElement8anic;
-	animation-direction: forwards;
-	animation-duration: 150s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement9anic{
-	0%   {left: -315px; top: 40%;}
-	100% {left: 315px; top: 40%;}
-	}
-	
-	.bgElement9c{
-	position: relative;
-	animation: bgElement9anic;
-	animation-direction: forwards;
-	animation-duration: 420s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement10anic{
-	0%   {left: -290px; top: 45%;}
-	100% {left: 300px; top: 45%;}
-	}
-	
-	.bgElement10c{
-	position: relative;
-	animation: bgElement10anic;
-	animation-direction: forwards;
-	animation-duration: 320s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement11anic{
-	0%   {left: -290px; top: 50%;}
-	100% {left: 300px; top: 50%;}
-	}
-	
-	.bgElement11c{
-	position: relative;
-	animation: bgElement11anic;
-	animation-direction: forwards;
-	animation-duration: 300s;
-	animation-iteration-count: infinite;
-	}
-	
-	@keyframes bgElement12anic{
-	0%   {left: -290px; top: 55%;}
-	100% {left: 300px; top: 55%;}
-	}
-	
-	.bgElement12c{
-	position: relative;
-	animation: bgElement11anic;
-	animation-direction: forwards;
-	animation-duration: 120s;
-	animation-iteration-count: infinite;
-	}
-	/* BuyNaturalPhonebgElementCon cloud element ani banner style end */
-/* skyScraperBuyNatural style end */
-
-/* contact details start */
-.paraConLogoInner{
-	position: relative;
-	top: 0;
-	width: 507px;
-	height: 100px;
+	height: auto;
 	display: flex;
 	justify-content: center;
-	padding: 0 10px !important;
+	padding: 0;
+	top: 20%;
 }
 
 .ribbonLisa{
-    width: 265px;
+    width: auto;
     height: auto;
     position: absolute;
     padding: auto;
-    margin: 195px auto auto auto;
+    margin: 30% auto auto auto;
     text-align: center;
-    background: #eaeaea;
-    background: linear-gradient(to bottom, #eaeaea, #c4c3c3);
-    box-shadow: rgba(0,0,0,0.3) 0 5px 5px;
+    background: #fff79e;
+    background: linear-gradient(to bottom, #D8E5EE, #c8ddec);
+    box-shadow: rgba(0, 18, 118, 0.3) 0 5px 5px;
     font-family: 'Helvetica Neue',Helvetica, sans-serif;
 }
 
 .ribbonLisa p{
     font-size: 1.8em !important;
-    color: #05004D;
-    text-shadow: #eaeaea 0 .5px 0;
-    margin: 0px;
+    color: #005398;
+    text-shadow: #D8E5EE 0 .5px 0;
+    margin: 0;
     padding: 2px 10px;
 }
 
@@ -1721,29 +1457,29 @@ table.center-on-narrow{
     content: '';
     position: absolute;
     display: block;
-    bottom: -1em;
-    border: 1.5em solid #eaeaea;
+    bottom: -2%;
+    border: 1.5em solid #c8ddec;
     z-index: -1;
 }
 
 .ribbonLisa:before{
-    left: -2em;
+    left:  -15%;
     border-right-width: 1.5em;
     border-left-color: transparent;
 }
 
 .ribbonLisa:after{
-    right: -2em;
+    right:  -15%;
     border-left-width: 1.5em;
     border-right-color: transparent;
 }
 
 .ribbonLisa .ribbonLisa-content:before, .ribbonLisa .ribbonLisa-content:after{
-    border-color: #eaeaea transparent transparent transparent;
+    border-color: #D8E5EE transparent transparent transparent;
     position: absolute;
     display: block;
     border-style: solid;
-    bottom: -1em;
+    bottom: -1%;
     content: '';
 }
 
@@ -1755,6 +1491,10 @@ table.center-on-narrow{
 .ribbonLisa .ribbonLisa-content:after{
     right: 0;
     border-width: 1em 1em 0 0;
+}
+
+img.lisaContactImg{
+	margin-top: -13%; 
 }
 
 .phoneUs1, .phoneUs2{
@@ -1773,20 +1513,677 @@ table.center-on-narrow{
 	width: 410px;
 }
 
-.phoneContact, .emailContact{
-	color: #05004d; 
-	background-color: #eaeaea;  
-	padding: 5px;
-	border-radius: 15px;
+.contactLisaDiv, .uiContactFooterDiv{
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	float: left;
+	height: auto;
+	background: #3251ff;
+}
+
+.contactLisaDiv{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+  
+.contactLisaDiv p, .emailContactLisa p{
+	text-align: center;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: 5px;
+	padding: 0;
+}
+
+.contactLisa{
+	color: #005398; 
+	background: #fff;  
+	margin-top: 8%;
+	padding: 0;
+	border-radius: 5px;
+	text-decoration: none !important;
+	font-size: 15px !important;
+}
+
+.contactLisa:hover{
+	background: #005398;  
+	color: #fff;
+	text-decoration: none !important;	
+}  
+
+.contactLisaFooter{
+	margin-top: 10%;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	text-decoration: none !important;
+	font-size: 15px !important;
+}
+
+/* Bubble Left */
+.bubble-left{
+	display: inline-block;
+	position: relative;
+	-webkit-tap-highlight-color: transparent;
+	transform: translateZ(0);
+}
+  
+.bubble-left:before{
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	border-style: solid;
+	transition-duration: 0.3s;
+	transition-property: left;
+	top: calc(50% - 5px);
+	left: 0;
+	border-width: 6px 7px 6px 0;
+	border-color: transparent #fff transparent transparent;
+	left: -5px;
+}
+
+.bubble-left:hover::before{ 
+	border-color: transparent #005398 transparent transparent;
+}
+
+/* buyNatural mrec banner start */
+.infoBox{
+	position: relative;
+	text-align: center;
+	top: 50px;
+	margin: 0 auto auto auto;
+	padding: auto;
+	width: 50%;
+	height: auto;
+	z-index: 50;
+}
+
+.coverClip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+	clip-path: circle(48% at 50% 50%);
+  	background: linear-gradient(to top, #adc1fc 10%, #6a8cff 50%, #3251ff 100%);
+}
+
+.coverClipCres, .coverClipCres2{
+	position: absolute;
+	width: 41%;
+	pointer-events: none;
+}
+
+.coverClipCres{
+  	width: 30%;
+    height: 100%;
+    top: 5%;
+    left: 9%;
+}
+
+.coverClipCres2{
+  	width: 50%;
+    height: 150% !important;
+    top: 9%;
+    left: 46%;
+	opacity: .3;
+}
+
+.clipShadow{
+	position: relative;
+	width: 98%;
+    height: 98%;
+    top: 1%;
+    left: 1%;
+	border-radius: 50%;
+	box-shadow: inset 5px 5px 8px #00000020, inset -5px -5px 10px #ffffffd6, 10px 20px 15px #00000010;
+	-webkit-box-shadow: inset 5px 5px 8px #00000020, inset -5px -5px 10px, 10px 20px 15px #00000010;
+	-moz-box-shadow: inset 5px 5px 8px #00000020, inset -5px -5px 10px, 10px 20px 15px #00000010;
+	box-shadow: inset 5px 5px 8px #00000020, inset -5px -5px 10px #ffffffc6, 10px 20px 15px #00000010;
+	pointer-events: none;
+}
+
+/* horizontal cloud element ani in BN banner style start */
+.bgElementCon{
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	position: absolute;
+	float: left;
+	overflow: hidden;
+	background: linear-gradient(to top, #adc1fc 10%, #6a8cff 50%, #3251ff 100%);
+}
+
+.bgElement1c{
+	position: relative;
+	animation: bgElement1anic;
+	animation-direction: forwards;
+	animation-duration: 160s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement1anic{
+	0%   {left: -530px; top: -5%;}
+	100% {left: 720px; top: -5%;}
+}
+  
+.bgElement2c{
+	position: relative;
+	animation: bgElement2anic;
+	animation-direction: forwards;
+	animation-duration: 180s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement2anic{
+	0%   {left: -500px; top: 5%;}
+	100% {left: 560px; top: 5%;}
+}
+
+.bgElement3c{
+	position: relative;
+	animation: bgElement3anic;
+	animation-direction: forwards;
+	animation-duration: 240s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement3anic{
+	0% {left: -450px; top: 10%;}
+	100% {left: 503px; top: 10%;}
+}
+
+.bgElement4c{
+	position: relative;
+	animation: bgElement4anic;
+	animation-direction: forwards;
+	animation-duration: 310s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement4anic{
+	0%   {left: -490px; top: 5%;}
+	100% {left: 495px; top: 5%;}
+}
+
+.bgElement5c{
+	position: relative;
+	animation: bgElement5anic;
+	animation-direction: forwards;
+	animation-duration: 110s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement5anic{
+	0%   {left: -520px; top: -95%;}
+	100% {left: 505px; top: -95%;}
+}
+
+.bgElement6c{
+	position: relative;
+	animation: bgElement6anic;
+	animation-direction: forwards;
+	animation-duration: 90s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement6anic{
+	0%   {left: -460px; top: -80%;}
+	100% {left: 455px; top: -80%;}
+}
+
+.bgElement7c{
+	position: relative;
+	animation: bgElement7anic;
+	animation-direction: forwards;
+	animation-duration: 125s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement7anic{
+	0%   {left: -570px; top: -135%;}
+	100% {left: 470px; top: -135%;}
+}
+
+.bgElement8c{
+	position: relative;
+	animation: bgElement8anic;
+	animation-direction: forwards;
+	animation-duration: 360s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement8anic{
+	0%   {left: -590px; top: -120%;}
+	100% {left: 460px; top: -120%;}
+}
+
+.bgElement9c{
+	position: relative;
+	animation: bgElement9anic;
+	animation-direction: forwards;
+	animation-duration: 420s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement9anic{
+	0%   {left: -515px; top: -140%;}
+	100% {left: 515px; top: -140%;}
+}
+
+.bgElement10c{
+	position: relative;
+	animation: bgElement10anic;
+	animation-direction: forwards;
+	animation-duration: 480s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement10anic{
+	0%   {left: -490px; top: -125%;}
+	100% {left: 470px; top: -125%;}
+}
+
+.bgElement11c{
+	position: relative;
+	animation: bgElement11anic;
+	animation-direction: forwards;
+	animation-duration: 540s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement11anic{
+	0%   {left: -510px; top: -180%;}
+	100% {left: 500px; top: -180%;}
+}
+
+.bgElement12c{
+	position: relative;
+	animation: bgElement12anic;
+	animation-direction: forwards;
+	animation-duration: 600s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bgElement12anic{
+	0%   {left: -490px; top: -205%;}
+	100% {left: 470px; top: -205%;}
+}
+
+.vitCon{
+	position: absolute;
+	top: 30px;
+	left: 0;
+	float: left;
+	width: 100%;
+	height: 100%;
+} 
+
+.codeBox{
+	top: -94.1%;
+	left: 78.2%;
+	position: relative;
+	width: 18.7%;
+	height: 18.7%;
+	float: left;
+}
+
+.ribbonInfoContactMe{
+    width: 60%;
+    position: absolute;
+    margin: -115px auto auto -10px;
+    text-align: center;
+    font-size: 3.5em !important;
+    background: rgba( 255, 255, 255, 0.01);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+    box-shadow: rgba(0,0,0,0.3) 0 1px 1px;
+    font-family: 'Helvetica Neue',Helvetica, sans-serif;
+}
+
+.ribbonInfoContactMe p{
+    font-size: 25px !important;
+    color: #801111;
+    text-shadow: #D65C5C 0 1px 0;
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.ribbon{
+	position: absolute;
+	right: -5px; top: -5px;
+	z-index: 1;
+	overflow: hidden;
+	width: 75px; height: 75px;
+	text-align: right;
+}
+
+.ribbon span{
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 20px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 100px;
+	display: block;
+	background: #79A70A;
+	background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+	box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 19px; right: -21px;
+}
+
+.ribbon span::before{
+	content: "";
+	position: absolute; left: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid #79A70A;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #79A70A;
+}
+
+.ribbon span::after{
+	content: "";
+	position: absolute; right: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid transparent;
+	border-right: 3px solid #79A70A;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #79A70A;
+}
+/* horizontal cloud element ani in BN banner style end */
+/* buyNatural mrec banner end */
+
+/* inline immortalSkin email style start */
+.fixedEmailimmortalSkin{
+	top: 28px;
+	left: 0;
+	margin: 0;
+	height: auto;
+  	width: 100%;
+  	position: absolute;
+	z-index: 1;
+}
+
+#scrollDIVEmailimmortalSkin{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+	height: 405px;
+  	overflow: auto;
+  	cursor: pointer;
+  	float: left;
+}
+
+#contentEmailimmortalSkin{
+	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: auto;
+ 	border-radius: 15px;
+ 	float: left;
+}
+
+#NoScrollimmortalSkin::-webkit-scrollbar{
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
+	overflow-y: scroll; 
+	display: none; 
+	height: auto !important;
+}
+
+.emailContainerimmortalSkin::-webkit-scrollbar{
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none; /* for Firefox */
+	overflow-y: scroll; 
+}
+
+*{
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.ExternalClass{
+	width: 100%;
+}
+
+div[style*="margin: 16px 0"]{
+	margin: 0 !important;
+}
+
+.centerimmortalSkin{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+table, td{
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+
+.emailContainerimmortalSkin{
+	position: relative;
+	margin: auto;
+	width: 90%;
+	height: auto !important;
+}	
+
+table{
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+
+table table table{
+	table-layout: auto;
+}
+
+img{
+	-ms-interpolation-mode: bicubic;
+}
+
+.yshortcuts a{
+	border-bottom: none !important;
+}
+
+a[x-apple-data-detectors]{
+	color: inherit !important;
+}
+
+.shopNowimmortalSkin:hover{
+	background: #ff15bd !important;
+	transition: .05s;
+	width: 350px !important;
+	margin: auto;
+}
+
+.shopNowimmortalSkin:hover p{
+	color: #000 !important;
+}
+
+.ImgHoverimmortalSkin:hover{
+	transform: rotate(3deg);
+	transition: .5s;
+}
+
+.immortalSPEND{
+	margin-top: -65px !important;
+}
+
+.immortalSPENDbtnlink .immortalSPENDbtn{
+	color: #fff;
+	background: #ff15bd;
+	font-size: 25px;
+	padding: auto;
+}
+
+.immortalSPENDbtn:hover, .immortalSPENDbtnlink:hover{
+	transition-duration: 0.7s;
+}
+
+.immortalInfoFooter, .immortalphoneContact, .immortalemailContact{
+	color: #000; 
+	padding: 10px;
 	text-decoration: none !important;
 }
 
-.phoneContact:hover, .emaiContact:hover{
+.immortalInfoFooter:hover, .immortalphoneContact:hover, .immortalemailContact:hover{
 	color: #fff !important; 
-	background-color: #05004d;  
+	background-color: #ff15bd;  
 	text-decoration: none !important;	
 }  
-/* contact details end */
+
+/* Outline Inward */
+.outline-inward{
+	display: inline-block;
+	position: relative;
+	-webkit-tap-highlight-color: transparent;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px transparent;
+}
+
+.outline-inward:before{
+	content: '';
+	position: absolute;
+	border: #ff15bd solid 4px;
+	top: -16px;
+	right: -16px;
+	bottom: -16px;
+	left: -16px;
+	opacity: 0;
+	transition-duration: .3s;
+	transition-property: top right bottom left;
+}
+
+.outline-inward:hover:before{
+	top: -8px;
+	right: -8px;
+	bottom: -8px;
+	left: -8px;
+	opacity: 1;
+}
+
+/* star rating style - start */
+#rating { font-size: 0; }
+#rating div { font-size: 30px; }
+#rating div::before { content: "☆"; }
+#rating div.active::before {content: "★"; color: #ff15bd; }
+#rating div:hover { cursor: pointer; }
+/* star rating style - end */
+
+/* immortalSkin email Queries end */
+@media screen and (max-width: 1366px){
+
+.emailContainerimmortalSkin{
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 80%;
+	height: 5500px;
+}
+
+.fluidimmortalSkin, .fluid-centered{
+	max-width: 100% !important;
+	height: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}	
+
+.fluidSocialimmortalSkin{
+	max-width: 15% !important;
+	height: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	padding: auto;
+}
+
+.fluid-centeredimmortalSkin{
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.stack-columnimmortalSkin, .stack-column-centerimmortalSkin{
+	display: block !important;
+	width: 100% !important;
+	direction: ltr !important;
+}	
+
+.stack-column-centerimmortalSkin{
+	text-align: center !important;
+}
+
+.center-on-narrowimmortalSkin{
+	text-align: center !important;
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	float: none !important;
+}
+
+table.center-on-narrowimmortalSkin{
+	display: inline-block !important;
+}	
+
+.fluidImgQimmortalSkin{
+	margin: 0 auto 20px auto !important; 
+}
+}	
+
+@media screen and (max-width: 600px) {
+
+.fluidimmortalSkin, .fluid-centeredimmortalSkin{
+	max-width: 100% !important;
+	height: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}	
+
+.fluid-centeredimmortalSkin{
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.stack-columnimmortalSkin, .stack-column-centerimmortalSkin{
+	display: block !important;
+	width: 100% !important;
+	direction: ltr !important;
+}	
+
+.stack-column-centerimmortalSkin{
+	text-align: center !important;
+}
+
+.center-on-narrowimmortalSkin{
+	text-align: center !important;
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	float: none !important;
+}
+
+table.center-on-narrowimmortalSkin{
+	display: inline-block !important;
+}	
+}         
+/* immortalSkin email Queries end */
+/* inline immortalSkin email style end */ 
 
 /* footer style start */
 .navFooter{
@@ -1864,10 +2261,6 @@ table.center-on-narrow{
 	margin-top: -3% !important;
 }
 
-.skyScraperBuyNatural{
-	height: 710px;
-}
-
 .logoFoot{
     margin: .3% 0 0 0 !important;
     height: 36px;
@@ -1892,10 +2285,6 @@ table.center-on-narrow{
 	margin-top: -20px !important;
 }
 }	
-
-@media screen and (max-width: 1180px){
-
-}
 
 @media screen and (max-width: 1080px){
 
@@ -1922,10 +2311,6 @@ table.center-on-narrow{
 
 @media  screen and (max-width: 980px){
 
-.heading3980{
-	font-size: 3.5em;
-}
-
 h4{
     font-size: 1.5em;
     font-weight: 700;
@@ -1934,40 +2319,520 @@ h4{
 p{
     font-size: 2em;
 }
+
+.mRECStardustCos, .mRECbotanyEssentials, .mRECMermade, .mobMRECBNbanner{
+	width: 750px;
+	height: 750px;
+} 
+
+.immortalSkinEmailCon{
+	width: 700px;
+	height: 660px;
 }
 
-@media  screen and (max-width: 574px){
+/* mermade hair style start */
+.containerMermade{
+	width: 750px;
+}
+/* mermade hair style end */
 
+#scrollDIVEmailimmortalSkin, #scrollDIVEmailimmortalSkin{
+	height: 605px;
+}
+
+/* scrollDIVEmailimmortalSkin style end */
+
+/* mobileBannerLaMaxime style start */
+.mobileBannerLaMaxime{
+	width: 700px;
+	height: 270px;
+} 
+
+#LaMaximeSlide img{
+	margin-top: -20px;
+	width: 100px;
+	height: auto;
+	justify-content: center;
+}
+
+.mobileBannerLaMaxime1, .mobileBannerLaMaxime2{
+	position: relative;
+	height: 270px;
+}
+
+.mobileBannerLaMaxime1{
+	width: 300px;
+}
+
+.mobileBannerLaMaxime2{
+	width: 100px;
+}
+
+.mobileBannerLaMaxime1 svg{
+	margin-top: 10px;
+	height: 250px;
+}
+
+.ShopNowLaMaxime{
+	margin: 100px auto auto auto;
+	width: 75%;
+	font-size: 8.5px;
+}
+/* mobileBannerLaMaxime style end */
+
+/* buyNatural banner mrec style start */
+img.vitImg {
+	position: relative;
+	width: 400px !important;
+	top: 11%;
+	margin: auto;
+	height: auto;
+} 
+
+.clipShadow{
+	width: 97%;
+	height: 97%;
+	top: 1.5%;
+	left: 1.5%;
+ }	
+
+.infoBox{
+	top: 10%;
+}
+
+.ribbonInfoContactMe{
+    margin: -25% auto 0 -10px;
+}
+/* mobileBannerLaMaxime style end */
+
+/* skyScraperContactMe style start */
+.skyScraperContactMe, .skyScraperFun{
+	height: auto;
+	width: auto;
+}
+
+.fixedPhoneContactMe{
+	height: 795px;
+	width: 357px;
+	border-radius: 55px;
+}
+
+#phoneSVGcontactMe{
+	height: 795px;
+	width: 410px;
+}
+/* skyScraperContactMe style end */
+
+/* botanyEssentials banner style start */
+.botanyEssentialsTEXTbox{
+	left: 53%;
+	bottom: -45%;
+	font-size: 45px;
+}
+/* botanyEssentials banner style end */
+
+/* clockConcontactMe style */
+.clockConcontactMe{
+	margin-top: 30px;
+	margin-left: 15px;
+}
+
+.clockConFun{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.batteryConContactMe{
+	margin-top: -20px;
+	margin-left: 260px;
+}
+
+.batteryConFun{
+	margin-top: -20px;
+	margin-left: 450px;
+}	
+
+/* contact details */
+.picContactCon{
+	margin-top: 20% !important;
+}
+
+.ribbonLisa{
+	width: 75%;
+	margin: 30% auto auto auto;
+}
+
+.uiContactFooterDiv{
+	margin: 5% auto 0 auto;
+}
+/* skyScraperContactMe style end */
+
+img.illustrationImg{
+	width: 40%; 
+}
+
+/* stardustBanner style start */
+/* card 1 - front of stack */
+    
+img.stardustBannerCardImg{
+	width: 400px;
+	height: auto;
+}    
+    
+#stardustSpaces:checked ~ .stardustCardSpaces{
+	/* the transform: translate(20%, 0) value moves card -  */
+	transform: translate(1%, -82%) rotate(0) translate(50%, -55%);
+}
+  
+/* card 2 */
+#stardustSpaces:checked ~ .card--stardusttabs{
+	transform: translate(1%, -82%) rotate(-4deg) translate(115%, -48%);
+}
+  
+/* card 3 */
+#stardustSpaces:checked ~ .card--stardustidea{
+	transform: translate(1%, -82%) rotate(-3deg) translate(-2%, -49%);
+}
+  
+/* card 4 */
+#stardustSpaces:checked ~ .card--stardustpricing{
+	transform: translate(1%, -82%) rotate(3deg) translate(99%, -45.5%);
+}
+  
+#stardusttabs:checked ~ .card--stardusttabs{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -55%);
+}
+  
+#stardusttabs:checked ~ .card--stardustidea{
+	transform: translate(1%, -82%) rotate(-4deg) translate(115%, -48%);
+}
+  
+#stardusttabs:checked ~ .card--stardustpricing{
+	transform: translate(1%, -82%) rotate(-3deg) translate(-2%, -49%);
+}
+  
+#stardusttabs:checked ~ .stardustCardSpaces{
+	transform: translate(1%, -82%) rotate(3deg) translate(99%, -45.5%);
+}
+  
+#stardustidea:checked ~ .card--stardustidea{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -55%);
+}
+  
+#stardustidea:checked ~ .card--stardustpricing{
+	transform: translate(1%, -82%) rotate(-4deg) translate(115%, -48%);
+}
+  
+#stardustidea:checked ~ .stardustCardSpaces{
+	transform: translate(1%, -82%) rotate(-3deg) translate(-2%, -49%);
+}
+  
+#stardustpricing:checked~.card--stardustpricing{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -55%);
+}
+  
+#stardustpricing:checked~.stardustCardSpaces{
+	transform: translate(1%, -82%) rotate(-4deg) translate(115%, -48%);
+}
+  
+#stardustpricing:checked~.card--stardusttabs{
+	transform: translate(1%, -82%) rotate(-3deg) translate(-2%, -49%);
+}
+  
+#stardustpricing:checked~.card--stardustidea{
+	transform: translate(1%, -82%) rotate(3deg) translate(99%, -45.5%);
+}
+    
+img.vitImg{
+    top: -5%;
+	width: 600px !important;
+} 
+/* stardustBanner style end */
+}
+
+@media  screen and (max-width: 955px){
+    body{
+        width: 955px;
+    }
+    
+}
+
+@media  screen and (max-width: 780px){
+
+/* mobMRECBNbanner style start */
+img.vitImg {
+	width: 400px !important;
+	top: -55px;
+} 
+
+.mobMRECBNbanner{
+	width: 450px;
+	height: 450px;
+}  	
+/* mobMRECBNbanner style end */	
+	
+/* skyScraperContactMe style start */
+.fixedPhoneContactMe{
+	margin: auto;
+	height: 595px;
+	width: 275px;
+	border-radius: 35px;
+}
+
+#phoneSVGcontactMe{
+	width: 100%;
+	height: 600px;
+}
+
+/* clockConcontactMe style start */
+.clockConcontactMe, .clockConFun{
+	margin-top: 20px;
+	margin-left: 5px;
+}
+
+.batteryConContactMe{
+	margin-top: -20px;
+	margin-left: 185px;
+}
+
+/* contact details */
+.picContactCon{
+	margin-top: -1% !important;
+}
+
+h4.contactLisa{
+	padding: 5px;
+	margin: 0 !important;
+}
+/* skyScraperContactMe style end */
+
+/* stardustBanner style start */
+img.stardustBannerCardImg{
+	width: 350px;
+	height: auto;
+}
+/* stardustBanner style end */
+}	
+
+@media  screen and (max-width: 750px){
+
+/* mobileBannerLaMaxime banner style start */
+.mobileBannerLaMaxime{
+	width: 320px;
+	height: 100px;
+} 
+
+#LaMaximeSlide img{
+	margin-top: -15px;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+
+.mobileBannerLaMaxime1, .mobileBannerLaMaxime2{
+	height: 100px;
+}
+
+.mobileBannerLaMaxime1{
+	width: 140px;
+}
+
+.mobileBannerLaMaxime2{
+	width: 40px;
+}
+
+.mobileBannerLaMaxime1 svg{
+	margin-top: 0;
+	height: 100px;
+}
+
+.ShopNowLaMaxime{
+	margin: 15px auto auto auto;
+	display: flex;
+	font-size: 8px;
+}
+/* mobileBannerLaMaxime banner style end */	
+
+/* botanyEssentials banner style start */
+.botanyEssentialsTEXTbox{
+	left: 58% !important;
+	font-size: 35px !important;
+}
+/* botanyEssentials banner style end */
+}
+	
+@media  screen and (max-width: 720px){
+	
+/* buyNatural banner mrec style start */
+.ribbonInfoContactMe{
+	margin: -115px auto auto -10px;
+}
+
+.infoBox{
+	top: 55px;
+}
+
+/* buyNatural mrec style start */	
+img.lisaContactImg{
+	margin-top: -10%;
+}
+
+.ribbonLisa{
+	width: 75%;
+	margin: 30% auto auto auto;
+}
+/* buyNatural mrec style end */	
+}	
+	
+@media  screen and (max-width: 574px){
+	
 body{
 	width: 574px !important;
-}
-
+}	
+	
 .Nav{
 	width: 574px !important;
 }
-
+	
 .NavThird1, .NavThird3{
 	width: 35%;
 }
-
+	
 .NavThird2{
 	width: 30%;
 }
-
+	
 h3{
 	font-size: 1.7em !important;
 }
-
+	
 p{
 	font-size: 1.4em !important;
 }
-
+	
 .paraConMQ{
 	margin-top: 5% !important;
 }
-
+	
 .paraCon{
 	width: 574px !important;
 	padding: 15px 0 !important;
 }
+	
+.mRECStardustCos, .mRECbotanyEssentials, .mRECMermade, .mobMRECBNbanner{
+	width: 450px;
+	height: 450px;
+}  
+	
+.immortalSkinEmailCon{
+	width: 500px;
+	height: 460px;
 }
+	
+/* mermade hair style start */
+.containerMermade{
+	width: 450px;
+}
+/* mermade hair style end */
+	
+ #scrollDIVEmailimmortalSkin, #scrollDIVEmailimmortalSkin{
+	height: 405px;
+}
+	
+/* ShopNowLaMaxime style start */
+.ShopNowLaMaxime{
+	margin: 25px auto auto auto;
+	display: flex;
+	font-size: 8px;
+}
+
+.mobileBannerLaMaxime{
+	margin-top: 0;
+} 
+/* ShopNowLaMaxime style end */		
+	
+/* skyScraperContactMe style start */
+.clockConcontactMe, .clockConFun{
+	margin-top: 20px;
+	margin-left: 5px;
+}
+	
+.batteryConContactMe{
+	margin-top: -20px;
+	margin-left: 185px;
+}	
+
+.batteryConFun{
+	margin-top: -20px;
+	margin-left: 440px;
+}	
+
+.coverClip{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+.coverClipCres{
+  width: 30%;
+  height: 100%;
+  top: 6%;
+  left: 9%;
+}
+
+.coverClipCres2{
+  width: 50%;
+  height: 150% !important;
+  top: 8%;
+  left: 44%;
+}
+
+.clipShadow{
+	width: 97%;
+	height: 97%;
+	top: 1.5%;
+	left: 1.5%;
+}	
+
+.contactLisaFooter{
+	margin-top: -2%;
+}
+/* skyScraperContactMe style end */
+
+ /* botanyEssentials banner style start */
+.botanyEssentialsTEXTbox{
+    left: 56% !important;
+	bottom: -44%;
+    font-size: 20px !important;
+}
+/* botanyEssentials banner style end */
+
+/* stardustBanner style start */
+img.stardustBannerCardImg{
+	width: 220px;
+	height: auto;
+}
+
+/* stardustBanner style start */
+/* card 1 - front of stack */
+  
+    
+#stardustSpaces:checked ~ .stardustCardSpaces{
+	/* the transform: translate(20%, 0) value moves card -  */
+	transform: translate(1%, -82%) rotate(0) translate(50%, -65%);
+}
+
+#stardusttabs:checked ~ .card--stardusttabs{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -65%);
+}
+  
+#stardustidea:checked ~ .card--stardustidea{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -65%);
+}
+
+#stardustpricing:checked~.card--stardustpricing{
+	transform: translate(1%, -82%) rotate(0) translate(50%, -65%);
+}
+/* stardustBanner style end */
+}	
